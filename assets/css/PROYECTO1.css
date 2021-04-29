@@ -1,0 +1,237 @@
+.containero {
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  width: 800px;
+  padding: 30px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 600px; /*ancho del recuadro total*/
+  height: 350px;
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: 100%; /*ancho del fondo*/
+    height: 50%; /*altura de fondo*/
+    transition: opacity .5s;
+    background:rgb(255, 255, 255);
+}
+
+
+
+ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+.menu{
+  text-align: center;
+  margin: -20px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+  
+}
+
+.menu li a{
+  display: inline-block;
+  color: grey;  
+  text-decoration: none;
+  background-color: grey;
+  padding: 8px;
+  width: 25px;
+  height: 15px;
+  font-size: 9px;
+  border-radius: 100%;
+  padding-top: 10%;
+}
+.texto {
+  font-size: 15px;
+  color: #4c527d;
+  padding-top: 7%;
+}
+div.profesion {
+  font-size: 13px;
+  left: 80px;
+  position: relative;
+  top: -30%;
+  height: 40%;
+  width: 50%;
+  text-align: left;
+  line-height: 20px;
+}
+p.letras {
+  width: 300px;
+  height: 60px;
+}
+.gris {
+  background-color: #F7F8FC;
+  border-left: solid 5px #F4A782;
+  height: 85%;
+}
+
+
+  /* 2 parte del trabajo */
+  .grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 2fr 2fr 2fr;
+    /* separaciones/espacio. tmb se puede usar grip-gap: para modificar todo en 1 */
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+.caja {
+  background: #ffffff;
+  color: rgba(81, 91, 117, 1); /* parrafo en gris */
+  font-size: 18px;
+  text-align: center;
+}
+/* títulos de los parrafos (logos) */
+.caja2 {
+  text-align: center;
+  color: #000;
+  font-size: 21px;
+}
+/* libro negro */
+.titulo {
+  text-align: center;
+  font-size: 36px;
+  vertical-align: top;
+}
+
+.box2 {
+  background: rgb(255, 255, 255);
+  padding: 25px;
+  color: rgba(81, 91, 117, 1);
+  text-align: left;
+  font-size: 30px;  
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 650px;
+  grid-template-columns: 2fr 2fr;
+  /* separaciones/espacio. tmb se puede usar grip-gap: para modificar todo en 1 */
+  column-gap: 25px;
+  row-gap: 25px;
+}
+.lista-tic, li {
+  margin-bottom: 10px;
+  font-size: 27px;
+}
+.button {
+  text-decoration:none;
+  font-weight: 600;
+  font-size: 20px;
+  color:#ffffff;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:40px;
+  padding-right:40px;
+  background-color:#FF7533;
+  border-color: #FF7533;
+  border-width: 3px;
+  border-style: solid;
+  border-radius:45px;
+}
+
+.caja4 { 
+ 
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  font-family: sans-serif; 
+  font-size: 30px; 
+  font-weight: 50px; 
+  color: #7C7B8B; 
+  background: #F7F8FC;
+}
+.email {
+  background-color: #ffffff;
+  width: 50%;
+  height: 60px;
+  border-color: #F7F8FC;
+  font-size: 20px;
+}
+.submit {
+  background-color: #FF7533;
+  color: #F7F8FC;
+  border-radius: 5px;
+  border-color: #FF7533;
+  padding-top:9px;
+  padding-bottom:10px;
+  padding-left:25px;
+  padding-right:25px;
+}
+.notocar {
+  color: #F7F8FC;
+}
+
+
+
+
+
+/* parte final */
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 200px 60px;
+  grid-template-columns: 4fr 4fr 4fr;
+  /* separaciones/espacio. tmb se puede usar grip-gap: para modificar todo en 1 */
+  column-gap: 60px;
+  row-gap: 60px; 
+  
+}
+.carton {
+background: #F7F8FC;
+color: rgba(81, 91, 117, 1); /* parrafo en gris */
+font-size: 16px;
+text-align: center;
+}
+.grid4 {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-auto-rows: 250px;
+  /* separaciones/espacio. tmb se puede usar grip-gap: para modificar todo en 1 */
+  column-gap: 30px;
+  grid-row: 30px;  
+  margin-bottom: 50px;
+}
+.boxing {
+background: #F7F8FC;
+color: rgba(81, 91, 117, 1); /* parrafo en gris */
+font-size: 18px;
+text-align: center;
+}
+.perfil {
+  padding: 10px; /*mueve para abajo*/
+  width: 20px;
+}
+.nombre {
+  font-size: 15px;
+  left: 80px;
+  position: relative;
+  top: -50px;
+  height: 150px;
+  width: 250px;
+  text-align: left;
+  line-height: 5px;
+}
